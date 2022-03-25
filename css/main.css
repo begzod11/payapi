@@ -359,7 +359,55 @@ template {
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/dm-serif-display-v9-latin-regular.woff2") format("woff2"), url("../fonts/dm-serif-display-v9-latin-regular.woff") format("woff");
+  src: url("../fonts/dm-serif-display-v9-latin-regular.woff2") format("woff2"), url("../fonts/dm-serif-display-v9-latin-regular.woff") format("woff");
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1110px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 html {
@@ -378,14 +426,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Public Sans","DM Serif Display","Arial", sans-serif;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #edf3f8;
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Paytone One","Arial", sans-serif;
 }
 
 img {
