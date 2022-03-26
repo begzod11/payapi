@@ -377,7 +377,7 @@ template {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1150px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -647,6 +647,115 @@ template {
     margin-left: 0;
     margin-top: 16px;
     width: 100%;
+  }
+}
+
+.about {
+  background-color: #1b262f;
+}
+
+.about__wrapper {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #fbfcfe;
+}
+
+.about__text {
+  width: 445px;
+  margin: 0;
+  margin-bottom: 50px;
+  line-height: 28px;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  color: #fbfcfe;
+}
+
+.about__link {
+  padding: 15px 32px;
+  border: 1px solid #fbfcfe;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fbfcfe;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+}
+
+.about__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about__item {
+  margin-left: 70px;
+  margin-top: 45px;
+}
+
+@media only screen and (max-width: 900px) {
+  .about__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  .about__list {
+    margin-bottom: 20px;
+  }
+  .about__item {
+    margin-left: 80px;
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .container .about__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .container .about__text {
+    width: 100%;
+  }
+  .about__item {
+    margin: 0 20px;
+    margin-bottom: 45px;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .about__item {
+    margin: 0 5px;
+    margin-bottom: 45px;
   }
 }
 
