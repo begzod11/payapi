@@ -1,0 +1,70 @@
+.simple {
+  padding: 150px 0;
+}
+.simple__span {
+  position: absolute;
+  background-image: url('../img/circle.svg');
+  top: -150px;
+  right: -600px;
+  width: 780px;
+  height: 780px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: "";
+  display: block;
+}
+.simple__wrapper {
+  @include flex(center, space-between);  
+  position: relative;
+  overflow: hidden;
+}
+.simple__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536B;
+}
+.simple__text {
+  margin: 0;
+  width: 445px;
+  line-height: 28px;
+  color: #6C8294;
+}
+.simple__imeges {
+  @include flex(center, space-between); 
+}
+@media only screen and(max-width: 990px){
+  .simple__span {
+    display: none;
+  }
+  .simple__wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+@media only screen and(max-width: 500px){
+  .simple__title {
+    width: 100%;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .simple__text {
+    width: 100%;
+  }
+  .simple__img {
+    width: 165px;
+    height: 320px;
+  }
+}
+@media only screen and(max-width: 385px){
+  .simple__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .simple__img {
+    width: 149px;
+    height: 290px;
+  }
+}
